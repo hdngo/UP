@@ -1,13 +1,51 @@
+
 html, body{
-	height: 100%;
-	width: 100%;
-	margin: 0;
-	padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-div{
-	height: 800px;
-	width: 100%;
-	border: 1px solid red;
-	color: red;
+body{
+  margin-top:100px;
 }
+
+div#navbar{
+  position: fixed;
+  text-align: right;
+  height: 75px;
+  width: 100%;
+  top: 0;
+}
+
+a.navbar-link{
+  color: orange;
+  font-size: 3em;
+  text-decoration: none;
+  margin: 0px 75px;
+}
+
+div.content{
+  margin-top:100px;
+}
+
+div.section{
+  height: 800px;
+  width: 100%;
+}
+
+
+
+.bgc-r{
+  background-color: red;
+}
+
+.bgc-g{
+  background-color: green;
+}
+
+.bgc-b{
+  background-color: blue;
+}
+
+
