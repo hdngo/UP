@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*scrolling*/
 #sectionOne {
 	width: 100%;
@@ -9,3 +10,18 @@
 	height: 800px;
 	background-color: blue;
 }
+=======
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	height: 800px;
+	width: 100%;
+	border: 1px solid red;
+	color: red;
+}
+>>>>>>> dbbec889ec4b2c5d432d117b8928fee552fc499f
