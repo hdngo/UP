@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*scrolling*/
 #sectionOne {
 	width: 100%;
@@ -10,7 +9,11 @@
 	height: 800px;
 	background-color: blue;
 }
-=======
+
+.ballon {
+	background: url("images/balloon_red.png");
+} 
+
 html, body{
 	height: 100%;
 	width: 100%;
@@ -24,4 +27,4 @@ div{
 	border: 1px solid red;
 	color: red;
 }
->>>>>>> dbbec889ec4b2c5d432d117b8928fee552fc499f
+
