@@ -13,8 +13,35 @@
 		    }
 		});
 
+		$('.navbar-link-1').click( function(){
+			$.scrollTo(".parallax-1", {duration:'slow', offsetTop : '500'});
+
+		});
+
+		$('.navbar-link-2').click( function(){
+			$.scrollTo(".parallax-2", {duration:'slow', offsetTop : '500'});
+
+		});
+
+
+		$('.navbar-link-3').click( function(){
+			$.scrollTo(".parallax-3", {duration:'slow', offsetTop : '500'});
+
+		});
+
+
+
+
+		
+
 	})
 
-
-
 }())
+
+// var scroll = function(){
+	
+// };
+
+//();
+
+// 100, 
