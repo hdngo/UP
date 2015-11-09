@@ -45,6 +45,19 @@ section.module.parallax-3 {
   background-image: url("./images/city3.jpg");
 }
 
+<<<<<<< HEAD:bg-color.css
+body{
+	background-color: 'white';
+}
+
+
+div{
+	height: 800px;
+	width: 100%;
+	border: 1px solid red;
+	color: red;
+=======
 .whitespace{
    display: block;
+>>>>>>> master:fly.css
 }
