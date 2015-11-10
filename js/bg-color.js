@@ -1,45 +1,43 @@
 (function(){
 
 	$(document).ready(function(){
-		console.log('sUP')
 
-		$("body").css('background-color', 'white')
-
+		$("body").css('background-color', 'rgb(11,94,193)')
 
 		var slides = $('.slide')
 		var colors = {};
 		for(var i = 0; i < slides.length; i++){
-			var breakpointVal = (800 * i).toString();
+			var breakpointVal = (724 * i).toString();
 			colors[breakpointVal]
 			colors[breakpointVal] = (slides[i].dataset.background)
 		}
 		var breakpoints = Object.keys(colors)
 
-		var windowPos = 0;
-
-	function scrollCallback(){
-		var scroll = $(window).scrollTop();
-
-		var elementBGColor = retrieveColor(scroll);
-		console.log('current color is ' + elementBGColor)
-		$('body').animate({ backgroundColor: elementBGColor }, 1000);
-	}
-
-	function retrieveColor(scrollPosition){
-		var bgColor = 'rgb(160, 234, 245)';
-		for(var index=0; index<breakpoints.length; index++){
-			if(scrollPosition < breakpoints[index + 1]){
-				console.log('lower than ' + breakpoints[index])
-				bgColor = colors[breakpoints[index]]
-				console.log('set color to ' + bgColor)
-				break
+		function retrieveColor(scrollPosition){
+			var bgColor = 'rgb(160, 234, 245)';
+			for(var index=0; index<breakpoints.length; index++){
+				if(scrollPosition < breakpoints[index + 1]){
+					bgColor = colors[breakpoints[index]]
+					break
+				}
 			}
+			return bgColor;
 		}
-		return bgColor;
-	}
 	
+		var currentColor = "rgb(11,94,193)"
 
-	$(document).scroll(scrollCallback)
+		$(document).scroll(function(){
+			var scroll = $(window).scrollTop();
+	    var scrollPositionColor = retrieveColor(scroll)
+	    if(scrollPositionColor == currentColor){
+	    	console.log('true')
+	    }
+	    else{
+	    	$('body').animate({backgroundColor: scrollPositionColor}, 500)
+	    	currentColor = scrollPositionColor;
+	    }
+
+		})
 	
 	})
 
