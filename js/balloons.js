@@ -6,7 +6,7 @@
 		for (var i = 1; i <= count; i++) {
 			(function (i) {
 				$('.navbar-link-'+i).click(function() {
-					$.scrollTo('.parallax-'+i, {duration:'slow', offsetTop : '500'});
+					$.scrollTo('.parallax-'+i, {duration:'slow', offsetTop : '724'});
 				});
 			})(i);
 		}
