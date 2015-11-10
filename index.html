@@ -1,37 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>UP</title>
-	<link rel="stylesheet" type="text/css" href="fly.css">
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/balloons.js"></script>
-</head>
-<body>
+  <head>
+   <title>UP</title>
+    <link rel="stylesheet" type="text/css" href="bg-color.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
+   <script src="js/bg-color.js"></script>
+   <script src="js/jquery.scrollTo.min.js"></script>
+ </head>
+ <body>
 
   <div id="navbar">
-    <a href="#top" class="navbar-link">Top</a>
-    <a href="#mid" class="navbar-link">Mid</a>
-    <a href="#bot" class="navbar-link">Bottom</a>
+    <a href="#one" class="navbar-link-1"><img class="nav-icon" src="https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png"></a>
+    <a href="#two" class="navbar-link-2"><img class="nav-icon" src="https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png"></a>
+    <a href="#three" class="navbar-link-3"><img class="nav-icon" src="https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png"></a>
+    <a href="#four" class="navbar-link-4"><img class="nav-icon" src="https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png"></a>
+    <a href="#five" class="navbar-link-5"><img class="nav-icon" src="https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png"></a>
+    <a href="#six" class="navbar-link-6"><img class="nav-icon" src="https://design.ubuntu.com/wp-content/uploads/logo-ubuntu_cof-orange-hex.png"></a>
   </div>
 
-  <!-- Main Content -->
-  <div class="content" id="uplogo">
-    <a name="1" class="section-link"></a>
-    <div id="1" class="section bgc-r">
-      <div></div>
-      <p>hi</p>
+  <section class="module parallax parallax-0">
+    <div class="container">
+      <div id="house">
+        <img src="./images/house.png"></img>
+      </div>
+      <!-- <div id="frontcloud">
+        <img src="./images/frontcloud.png"></img>
+      </div> -->
+      <div id="uplogo"> 
+       <img src="./images/uplogostroke.png"></img>
+      </div>
     </div>
+  </section>
 
-    <a name="mid" class="section-link"></a>
-    <div id="2" class="section bgc-g">
-      <p>hi</p>
-    </div>
+  <img id="move" src="http://vignette3.wikia.nocookie.net/fantendo/images/8/8b/Mario_on_a_Rocket.png/revision/latest?cb=20120915115041"/>
 
-    <a name="bot" class="section-link"></a>
-    <div id="3" class="section bgc-b">
-      <p>hi</p>
-    </div>
-  </div>
+  <section class="slide module parallax parallax-1" data-background="rgb(11,94,193)">
+    <img class="test-img" src="http://www.dvdizzy.com/images/t-v/up-ff02.jpg">
+   </section> 
+  
+    <section class="slide module parallax parallax-2" data-background="rgb(24,112,209)">
+      <img class="test-img" src="https://niels85.files.wordpress.com/2012/01/up_3.jpg">
+    </section>
 
-</body>
+    <section class="slide module parallax parallax-3" data-background="rgb(42,132,228)">
+      <img class="test-img" src="http://static.guim.co.uk/sys-images/Film/Pix/pictures/2012/10/5/1349454208864/Up-Film---2009-011.jpg">
+    </section>
+
+    <section class="slide module parallax parallax-4" data-background="rgb(68,158,246)">
+      <img class="test-img" src="http://www.moviezwallpapers.com/download/cartoon_up_scene-1920x1080.jpg">
+    </section>
+
+    <section class="slide module parallax parallax-5" data-background="rgb(114,203,244)">
+      <img class="test-img" src="http://scienceblogs.com/dotphysics/wp-content/blogs.dir/342/files/2012/04/i-d75b4b46d5ec1617dc68e0ae22387771-up-balloon-1.jpg">
+    </section>
+
+    <!-- removed base id from this section -->
+    <section class="slide no-border module parallax parallax-6" data-background="rgb(160,234,245)">
+    </section>
+
+    <img id="test-img" class="no-border" src="http://demodern.de/assets/img/home/mountain.png" />
+    <script src="js/balloons.js"></script>
+
+  </body>
+
+ 
+  
+
+  <script src="js/balloons.js"></script>
 </html>
